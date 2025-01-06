@@ -1,0 +1,489 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 224, 224);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    transition: transform .5s;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(21, 13, 13);
+    box-shadow: 0px 8px 4px gray;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    
+}
+.nav-1 img{
+    width: 100px;
+    border-radius: 900px;
+}
+.nav ul a{
+    text-decoration: none;
+    margin-inline: 20px;
+    margin-top: 20rem;
+    color: white;
+    font-size: 20px;
+}
+.nav ul a:hover{
+    color: red;
+}
+.nav ul{
+    margin-top: 2.5rem;
+    margin-left: 25rem;
+}
+.nav-1 img{
+    margin-left: 4rem;
+}
+.nav button{
+    width: 80px;
+    height: 28px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.nav button:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.cart i{
+    position: relative;
+    right: 40px;
+    top: 40px;
+    font-size: 27px;
+    color: white;
+
+}
+.cart span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 29px;
+    top: 54px;
+}
+.shoppingCart{
+    width: 400px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+body.showCart .shoppingCart{
+    inset: 0 0 0 auto;
+}
+body.showCart .cart{
+    transform: translateX(-250px);
+}
+.shoppingCart .btn button{
+    background-color: red;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.shoppingCart h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+} 
+.shoppingCart .btn{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.shoppingCart .btn .close{
+    background-color: white;
+    color: black;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item {
+    display: grid;
+    grid-template-columns: 60px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+.listCart{
+    overflow: auto;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15rem;
+    margin-left: 3rem;
+}
+.img img{
+    width: 750px;
+}
+.mainText h1{
+    font-size: 50px;
+}
+.mainText h2{
+    font-size: 40px;
+    color: rgb(6, 165, 165);
+}
+.mainText p{
+    font-size: 18px;
+}
+.mainText button{
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 7px;
+    font-size: 17px;
+}
+.mainText button:hover{
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+.head{
+    text-align: center;
+    margin-top: 10rem;
+}
+.head span{
+    color: rgb(8, 201, 201);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.trend img{
+    width: 100%;
+    height: 60%;
+}
+.card .trend{
+    width: 290px;
+    height: 500px;
+    background-color: white;
+    margin-inline: 22px;
+}
+.trend .card-text{
+    padding: 10px;
+}
+.trend i{
+    font-size: 22px;
+    color: rgb(255, 187, 0);
+}
+.trend button{
+    width: 90px;
+    height: 28px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 3rem;
+}
+.card-text button:hover{
+    background-color: white;
+    color: black;
+}
+.card .trend:hover{
+    width: 330px;
+    background-color: silver;
+    color: black;
+    transition: 0.5s ease;
+
+}
+.Blogs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Blog-Card{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: white;
+    width: 500px;
+    margin-inline: 22px;
+    padding: 10px;
+}
+.Blog-Card:hover{
+    width: 550px;
+    transition: 0.5s ease;
+    background-color: silver;
+}
+.Blog-Card img{
+    width: 50%;
+    border-radius: 11px;
+}
+.Blog-Card .Blog-Text{
+    text-align: center;
+    padding: 10px;
+}
+.Blog-Text a{
+    width: 70px;
+    padding: 7px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+.Blog-Text h2{
+    font-size: 26px;
+}
+.Blog-Text p{
+    font-size: 18px;
+}
+.contact-page{
+    width: 500px;
+    height: 250px;
+    border: 4px solid aqua;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 28rem;
+    padding: 20px;
+    flex-direction: column;
+}
+.contact-page input{
+    width: 400px;
+    height: 35px;
+    margin: 5px;
+    outline: none;
+    margin-left: 2.5rem;
+    font-size: 17px;
+}
+.contact-page button{
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10rem;
+}
+.contact-page button:hover{
+    background-color: transparent;
+    color: black;
+    border: 3px solid red;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    margin-top: 5rem;
+}
+.footer .text{
+    font-size: 18px;
+}
+.login-page{
+    display: none;
+    width: 190px;
+    padding: 22px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    margin-left: 80%;
+    top: 4.5rem;
+}
+.login-page input{
+    width: 160px;
+    padding: 4px;
+    border: 2px solid aqua;
+    margin-top: 11px;
+}
+.login-page button{
+    width: 80px;
+    height: 25px;
+    border: none;
+    margin-top: 13px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}
+
+/* ==================================== */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  /* General responsiveness adjustments */
+@media (max-width: 1200px) {
+    .nav ul {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mainText h1 {
+        font-size: 35px;
+    }
+
+    .mainText h2 {
+        font-size: 30px;
+    }
+
+    .mainText p {
+        font-size: 16px;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .card .trend {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .contact-page {
+        margin: auto;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-1 img {
+        margin: 0 auto;
+    }
+
+    .nav ul {
+        margin-top: 1rem;
+    }
+
+    .login-page {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: auto;
+    }
+
+    .mainText {
+        margin: 0 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Blogs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Blog-Card {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px auto;
+    }
+
+    .contact-page {
+        width: auto;
+        padding: 10px;
+    }
+    .contact-page input{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-page button{
+        margin-left: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .nav ul a {
+        font-size: 16px;
+        margin-inline: 10px;
+    }
+
+    .mainText h1 {
+        font-size: 28px;
+    }
+
+    .mainText h2 {
+        font-size: 22px;
+    }
+
+    .mainText p {
+        font-size: 14px;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .trend {
+        margin: 5px auto;
+    }
+
+    .footer .text {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+  
